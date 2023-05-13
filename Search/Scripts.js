@@ -1,6 +1,4 @@
  
-import {alert_hi} from '../global.js'
- 
 
 
 // Request the JSON from the EXTERNAL folder
