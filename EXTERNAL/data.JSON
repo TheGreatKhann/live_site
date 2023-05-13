@@ -1,0 +1,48 @@
+[{
+    "title": "Bread Soup",
+    "type": "menu", 
+    "desc": "Here is a description for result 1", 
+    "tags":["Menu item", "Soup", "Bread"]
+},
+{
+    "title": "Apple Pie",
+    "type": "menu", 
+    "desc": "This is absolutely the best homemade apple pie you'll ever make! It has a flaky, buttery crust and a tender, lightly-spiced apple pie filling.", 
+    "tags":["Pie", "Fruit"]
+},
+{
+    "title": "Top 10 Polish Soups", 
+    "type": "article", 
+    "desc": "In the Republic of Poland, soup is a popular traditional meal. It is common in time of famme or just for enjoyment. Here is our favourite soups from Poland!", 
+    "tags":["Soup", "Poland", "Top 10", "List"]
+},
+{
+    "title": "How healthy are Meat Pies?", 
+    "type": "article", 
+    "desc": "With the increasing popularity of fast food, cheap meat pies a common meal for those on a road trip or for a school event.", 
+    "tags":["Health and Wellbeing", "Fast Food", "Diet"]
+},
+{
+    "title": "Dutch Pancakes", 
+    "type": "recipe", 
+    "desc": "I found this pancake recipe in my Grandma's recipe book. Judging from the weathered look of this recipe card, this was a family favorite.", 
+    "tags":["Pancakes", "Sweet"]
+},
+{
+    "title": "The history of apples", 
+    "type": "article", 
+    "desc": "Wikipedia: Due to the genetic variability in Central Asia, this region is generally considered the center of origin for apples.[19] The apple is thought to have been domesticated 4000-10000 years ago in the Tian Shan mountains, and then to have travelled along the Silk Road to Europe, with hybridization and introgression of wild crabapples from Siberia (M. baccata), the Caucasus (M. orientalis), and Europe (M. sylvestris).", 
+    "tags":["Fruit"]
+},
+{
+    "title": "Crab Pie", 
+    "type": "article", 
+    "desc": "Wikipedia: Crab meat or crab marrow is the meat found within a crab, or more specifically, the leg of a crab. It is used in many cuisines around the world, prized for its soft, delicate and sweet taste.", 
+    "tags":["Pie", "Seafood", "Crab", "Meat"]
+},
+{
+    "title": "Horse Soup/Stew", 
+    "type": "menu", 
+    "desc": "In some parts of the world, horse meat is very popular. It can even be the basis for a soup!", 
+    "tags":["Soup", "Meat"]
+}]

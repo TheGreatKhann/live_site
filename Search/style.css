@@ -1,0 +1,96 @@
+body {
+    margin-left: 50px;
+    margin-right: 80px;
+
+    font-family: "Segoe UI Light","sans-serif";
+}
+
+nav {background-color: salmon;padding:10px;}
+
+/*Remove styling caused by being a link*/
+#results > a {color: inherit; text-decoration: inherit;}
+
+.search_arg {
+    background-color: lightskyblue;
+    padding:10px;
+
+    border-bottom: 3px solid gray;
+}
+
+/*"Search" button*/
+.search_arg > input[type="button"] {
+    height: 2.5rem;
+}
+
+input[type="checkbox"] + label {
+    cursor: pointer;
+    user-select: none;
+
+    padding-left: 25px;
+}
+
+input[type="checkbox"] + label:hover {
+    background-image: linear-gradient(-90deg, gray, rgba(0,0,0,0));
+
+    border: 0px solid gray;
+    border-radius: 3px;
+}
+
+
+
+input[type="checkbox"] {
+    margin: 0;
+    font: inherit;
+    width: 1.15em;
+    height: 1.15em;
+
+    margin-right: -25px;
+  }
+
+
+
+
+
+#search_box {
+    font-size: 18px;
+    width: 500px;
+    height: 2.5rem;
+    margin-bottom: 8px;
+}
+
+.result {
+    border: 1px solid lightgray;
+
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.result:hover {background-color: Gainsboro;}
+
+.tag_cont {margin: 15px 5px 10px 5px;}   /*Top, right, bottom, left*/
+
+.tag {
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: white;
+
+    margin-right: 7px;
+        /*Top, right, bottom, left*/
+    padding: 2px 5px 2px 5px;
+
+    user-select: none;
+    
+}
+
+.tag:hover {background-color: lightgray;}
+
+/*images which class that start with "ban_"*/
+img.banner {
+    height: 80px;
+
+    position: relative;
+    display: block;
+    float: right;
+    left:5px;
+    top: -5px;
+  }

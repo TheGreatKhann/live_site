@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Search...</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="module" src="Scripts.js"></script> 
+    </head>
+<body onload="alert_hi()">
+    <header>
+        <nav>
+            <br><br>Here is the nav box | Update<br>
+            <a href="../index.html">Home</a><br>
+        </nav>
+    </header>
+    <div class="search_arg">
+        <input type="search" name="search_box" placeholder="Search for page..." id="search_box" onkeydown="search_enter()">
+        <input type="button" value="Search" onclick="search()"><br>
+
+         
+        <input type="checkbox" id="recipe_check" checked>
+        <label for="recipe_check" class="checkbox">Recipies</label>
+
+        <input type="checkbox" id="menu_check" checked>
+        <label for="menu_check">Menu items</label>
+        <br>
+        
+        <input type="checkbox" id="article_check" checked>
+        <label for="article_check">Articles</label>
+        
+        
+        
+    </div>
+
+    <!--
+    <section class='result'>
+        
+        <img src="../imgs/article.png" class="banner"></img><h2>Test tile</h2>
+        Here is the test description
+        <div class="tag_cont">
+            <span class="tag">Tag 1</span>
+            <span class="tag">Tag 2</span>
+        </div>
+    </section>
+    -->
+    <span id="results"></span>
+
+
+</body>
+</html>

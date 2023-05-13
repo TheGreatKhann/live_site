@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: rgb(133, 3, 3);
+
+        }
+
+        .top-div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(247, 31, 31);
+            padding: 10px;
+        }
+
+        .left-div {
+            background-color: rgb(227, 121, 100);
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            padding: 1%;
+            height: 120px;
+
+            border-radius: 5% 5%;
+        }
+
+        .right-div {
+            background-color: rgb(227, 121, 100);
+            width: 100px;
+            height: 120px;
+            text-align: center;
+            padding: 1%;
+            border-radius: 5% 5%;
+        }
+
+        .container {
+            margin-top: 1%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .box {
+            flex: 1;
+            background-color: rgb(233, 173, 173);
+            padding: 20px;
+            min-width: calc(50% - 10px);
+            box-sizing: border-box;
+            border: 1px solid black;
+            height: 550px;
+            border-radius: 5% 5%;
+
+        }
+
+        img {
+            width: 50%;
+            height: 50%;
+            margin-left: 30%;
+        }
+
+        .qr {
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-div">
+        <div class="left-div">
+            <h3>Visit Us</h3>
+            1234 MIcheal Drain City
+        </div>
+        <h1>Food Menu <br> Best Food In Town</h1>
+
+        <div class="right-div">
+            <h3>Come In We're Open</h3>
+            EveryDay 10Am-9PM
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box" id="app">
+            <h1>Appetizers</h1>
+            <hr>
+            <img src="images/easy-appetizer-meatballs-3054462-8-5b3f8e68c9e77c0037cbdeb8.jpg" alt="">
+        </div>
+        <div class="box" id="main-course">
+            <h1>Main Course</h1>
+            <hr>
+            <img src="images/SIMPLY-RECIPES-Classic-Potato-Salad-LEAD-2-Horizontal-3dc58bbc058844cbb1e9242e8b1515a7.jpg"
+                alt="">
+        </div>
+        <div class="box" id="salad-items">
+            <h1>Salad</h1>
+            <hr>
+            <img src="images/download.jpeg" alt="">
+        </div>
+        <div class="box">
+            <h1>Delivery</h1>
+            <h2>For Delivery Call Us</h2>
+            <a href="tel:+1-555-1234">+1 (555) 1234</a>
+
+            <hr>
+            <img src="images/qr.png" alt="" class="qr">
+        </div>
+    </div>
+    <script>
+        fetch('menu.json')
+            .then(response => response.json())
+            .then(data => {
+                const salads = data.salads;
+                const saladItems = document.getElementById('salad-items');
+                salads.forEach(salad => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<strong>${salad.name}</strong><br>${salad.description}<br>$<strong>${salad.price.toFixed(2)}</strong>`;
+                    saladItems.appendChild(li);
+                });
+            })
+            .catch(error => {
+                console.error('Error loading menu data:', error);
+            });
+    
+    
+    
+        fetch('menu.json')
+            .then(response => response.json())
+            .then(data => {
+                const salads = data.mainCourses;
+                const saladItems = document.getElementById('main-course');
+                salads.forEach(mainCourses => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<strong>${mainCourses.name}</strong><br>${mainCourses.description}<br>$<strong>${mainCourses.price.toFixed(2)}</strong>`;
+                    saladItems.appendChild(li);
+                });
+            })
+            .catch(error => {
+                console.error('Error loading menu data:', error);
+            });
+    
+    
+        fetch('menu.json')
+            .then(response => response.json())
+            .then(data => {
+                const salads = data.appetizers;
+                const saladItems = document.getElementById('app');
+                salads.forEach(appetizers => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<strong>${appetizers.name}</strong><br>${appetizers.description}<br>$<strong>${appetizers.price.toFixed(2)}</strong>`;
+                    saladItems.appendChild(li);
+                });
+            })
+            .catch(error => {
+                console.error('Error loading menu data:', error);
+            });
+    </script>
+</body>
+</html>

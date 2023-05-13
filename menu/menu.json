@@ -1,0 +1,54 @@
+{
+    "salads": [
+      {
+        "name": "Caesar Salad",
+        "description": "Romaine lettuce, croutons, Parmesan cheese, and Caesar dressing",
+        "price": 7.99
+      },
+      {
+        "name": "Greek Salad",
+        "description": "Mixed greens, cucumbers, tomatoes, feta cheese, and Kalamata olives",
+        "price": 8.99
+      },
+      {
+        "name": "Cobb Salad",
+        "description": "Mixed greens, grilled chicken, bacon, hard-boiled egg, avocado, and blue cheese dressing",
+        "price": 9.99
+      }
+    ],
+    "mainCourses": [
+      {
+        "name": "Grilled Salmon",
+        "description": "Fresh salmon fillet served with roasted vegetables and lemon-butter sauce",
+        "price": 16.99
+      },
+      {
+        "name": "Chicken Alfredo",
+        "description": "Grilled chicken breast served over fettuccine pasta with creamy Alfredo sauce",
+        "price": 14.99
+      },
+      {
+        "name": "Beef Stir-Fry",
+        "description": "Thinly sliced beef with mixed vegetables and soy sauce, served over rice",
+        "price": 12.99
+      }
+    ],
+    "appetizers": [
+      {
+        "name": "Mozzarella Sticks",
+        "description": "Breaded and fried mozzarella cheese sticks, served with marinara sauce",
+        "price": 5.99
+      },
+      {
+        "name": "Chicken Wings",
+        "description": "Spicy buffalo-style chicken wings with blue cheese dressing",
+        "price": 6.99
+      },
+      {
+        "name": "Spinach and Artichoke Dip",
+        "description": "Creamy spinach and artichoke dip, served with tortilla chips",
+        "price": 7.99
+      }
+    ]
+  }
+  
