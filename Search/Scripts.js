@@ -9,7 +9,8 @@ async function get_pages() {
     if (localStorage.getItem("search_query") == null) {
         search(document.getElementById("search_box").value); // When no external call, display local search box
     } else {
-        search(localStorage.getItem("search_query"));        // Get remote query
+        document.getElementById("search_box").value = localStorage.getItem("search_query"); // Remote query to searchbox
+        search();                                            // Start the search
         localStorage.removeItem("search_query");             // Clear storage
     }
 }
@@ -22,9 +23,9 @@ function dis_results(matching) {
     for (var i = 0; i < matching.length; i++) {
         var to_add = "";
 
-        to_add += "<a href='../Pages/page_test.html'>"
+        to_add += "<a href='Pages/page_test.html'>"
         to_add += "<section class='result'>";                   // Opens the section
-        to_add += "<img src='../imgs/" + matching[i].type + ".png' alt='" + matching[i].type + "' class='banner'></img>"; // Adds banner image
+        to_add += "<img src='imgs/" + matching[i].type + ".png' alt='" + matching[i].type + "' class='banner'></img>"; // Adds banner image
         to_add += "<h2>" + matching[i].title + "</h2>";         // Adds the title
         to_add += matching[i].desc + "<div class='tag_cont'>";  // Adds description + tag container
         // Loops through all the tags and puts them in their own span

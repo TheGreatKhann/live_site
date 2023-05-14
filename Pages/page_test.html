@@ -5,6 +5,7 @@
         <title>Page example</title>
         <link rel="stylesheet" href="../Search/style.css">
         <script src="Scripts.js"></script>
+        <script src="../global.js"></script>
     </head>
     <header>
         <nav>
@@ -12,9 +13,8 @@
             <a href="../index.html">Home</a><br>
         </nav>
     </header>
-<body onload="get_pages()">
+<body onload="get_pages(), get_nav()">
     <br>
-    <input type="search" name="search_box" placeholder="Search for page..." id="search_nav_box" onkeydown="search_nav_enter()"><br>
     <p>This page is only used for testing passing arguments to the search page and displaying JSON</p>
     <input id="input" type="number" min="1" max="8" onchange="search_index()">
     <span id="main"></span>

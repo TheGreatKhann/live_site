@@ -1,3 +1,3 @@
 {
-    "link": "<a href='Search/index.html'>Search box - Walter Kruger</a><br><a href='Pages/page_test.html'>Display JSON test</a><br><a href='menu/index.html'>Menu page - Ricky Bobby</a><br><a href='footer/index.html'>Footer - Sujan Neupane</a><br><a href='recipes/index.html'>Recipes - Adityo Muhammad</a>"
+    "link": "<span> <a href='index.html'>Home</a></span> |<span> <a href='Search/search_page.html'>Search box</a></span> |<span> <a href='Pages/page_test.html'>Display JSON test</a></span> |<span> <a href='menu/index.html'>Menu page</a></span> |<span> <a href='footer/index.html'>Footer</a></span> |<span> <a href='recipes/index.html'>Recipes</a></span>"
 }

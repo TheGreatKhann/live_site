@@ -14,7 +14,7 @@ function search_nav_enter() {
     input.addEventListener("keypress", function _listener() {
         if (event.key === "Enter") {
             localStorage.setItem("search_query", document.getElementById("search_nav_box").value);
-            window.location.href="../Search/index.html";
+            window.location.href="Search/index.html";
         } 
         // Removes listener
         input.removeEventListener("keypress", _listener, true);

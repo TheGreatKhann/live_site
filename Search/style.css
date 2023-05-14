@@ -5,8 +5,6 @@ body {
     font-family: "Segoe UI Light","sans-serif";
 }
 
-nav {background-color: salmon;padding:10px;}
-
 /*Remove styling caused by being a link*/
 #results > a {color: inherit; text-decoration: inherit;}
 
@@ -14,18 +12,26 @@ nav {background-color: salmon;padding:10px;}
     background-color: lightskyblue;
     padding:10px;
 
+
     border-bottom: 3px solid gray;
 }
+/*Increase the height of a line break*/
+.search_arg > br {display: block;margin-bottom: 3px;}
 
 /*"Search" button*/
 .search_arg > input[type="button"] {
     height: 2.5rem;
+
+    position: relative;
+    top: -2px;
 }
 
 input[type="checkbox"] + label {
+    font-size: 1.1rem;
     cursor: pointer;
     user-select: none;
 
+    padding: 2px;
     padding-left: 25px;
 }
 

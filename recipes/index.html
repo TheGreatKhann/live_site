@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe 101 </title>
+    <link rel="stylesheet" href="normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="main.css" />
+    <script src="../global.js"></script>
+  </head>
+  <body onload="get_nav()">
+    <!-- main -->
+    <main class="page">
+      <!-- header -->
+      <header class="hero">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>Recipe 101</h1>
+            <h4>Cook your own recipe</h4>
+          </div>
+        </div>
+      </header>
+      <!-- end of header -->
+        <div class="recipes-list">
+          <!-- single recipe -->
+          <a href="single-recipe.html" class="recipe">
+            <img
+              src="recipe-1.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Beef Teriyaki</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="single-recipe.html" class="recipe">
+            <img
+              src="recipe-2.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Chicken Pajitas</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="single-recipe.html" class="recipe">
+            <img
+              src="recipe-3.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Spinach Prawn Pasta
+            </h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+        </div>
+        <!-- end of recipes list -->
+      </section>
+    </main>
+    <!-- end of main -->
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Recipe101</span> Built by Adityo Muhammad
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
