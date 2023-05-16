@@ -16,7 +16,7 @@ async function get_nav(exclude) {
     place_nav(exclude);
 }
 // Create the HTML for the header
-function place_nav(exclude) {
+function place_nav(exclude) {                                   // ### CHANGE THIS TO YOUR LOCAL PATH ###
     document.getElementsByTagName("head")[0].innerHTML += "<base href='https://thegreatkhann.github.io/live_site/'>";
     document.getElementsByTagName("head")[0].innerHTML += "<link rel='stylesheet' href='global.css'>"
 
