@@ -17,7 +17,7 @@ async function get_nav(exclude) {
 }
 // Create the HTML for the header
 function place_nav(exclude) {                                   // ### CHANGE THIS TO YOUR LOCAL PATH ###
-    document.getElementsByTagName("head")[0].innerHTML += "<base href='https://thegreatkhann.github.io/live_site/'>";
+    document.getElementsByTagName("head")[0].innerHTML += "<base href='/C:/Users/walte_sadamq8/Desktop/CDU/HIT226/Final Report (Sprint 7)/sprint-7-final-report/'>";
     document.getElementsByTagName("head")[0].innerHTML += "<link rel='stylesheet' href='global.css'>"
 
     const header = document.getElementsByTagName("header")[0];

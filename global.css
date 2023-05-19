@@ -1,16 +1,25 @@
+header {
+    position: -webkit-sticky;   /*Compatibility*/
+    position: sticky;
+    z-index: 1; /*Placed in front of all elements*/
+
+    margin-right: -3%;
+    margin-left: -3%;
+    margin-top: -8px;
+    top: 0;
+}
+
 nav {
     background-color: White;
     border-bottom: 4px solid gray;
     border-radius: 2px;
 
-    padding: 0px 20px 15px 20px;   /*Top, right, bottom, left*/
+    padding: 2px 20px 10px 20px;   /*Top, right, bottom, left*/
     margin-bottom: 30px;
-    margin-top: 20px;
 
     font-size: 20px;
     color: gray;
     user-select: none;
-
     text-align: center;
 }
 
@@ -18,25 +27,22 @@ nav a {
     text-decoration: inherit;
     color: black;
 
-    padding: 2px 10px 7px 10px;   /*Top, right, bottom, left*/
+    padding: 0px 10px 7px 10px;   /*Top, right, bottom, left*/
     margin-right: 5px;
     margin-left: 5px;
 
     border-radius: 5px;
     }
 
-nav a:hover {text-decoration: underline;;background-color: rgb(0, 0, 0, 0.15);}
+nav a:hover {text-decoration: underline;background-color: rgb(0, 0, 0, 0.15);}
 
 #search_nav_box {
     font-size: 14px;
     width: 350px;
-    height: 2.0rem;
-
-    margin-bottom: -10px;
-    padding: 0px;
+    height: 1.8rem;
 
     position: relative;
-    top: -15px;
+    top: -3px;
 }
 
 #search_nav_button {
@@ -46,9 +52,10 @@ nav a:hover {text-decoration: underline;;background-color: rgb(0, 0, 0, 0.15);}
     cursor: pointer;
 
     width: 55px;
-    height: 2.0rem;
+    height: 1.8rem;
+
     position: relative;
-    top: -15px;
+    top: -3px;
 }
 
 

@@ -1,38 +1,49 @@
 body {
-    margin-left: 50px;
-    margin-right: 80px;
+    margin-left: 5%;
+    margin-right: 7%;
 
     font-family: "Segoe UI Light","sans-serif";
+    background-color: Lavender;
 }
+
+
+
 
 /*Remove styling caused by being a link*/
 #results > a {color: inherit; text-decoration: inherit;}
 
 .search_arg {
-    background-color: lightskyblue;
+    background-color: lightgray;
     padding:10px;
 
 
     border-bottom: 3px solid gray;
 }
 /*Increase the height of a line break*/
-.search_arg > br {display: block;margin-bottom: 3px;}
+.search_arg > br {display: block;margin-bottom: 8px;}
 
 /*"Search" button*/
 .search_arg > input[type="button"] {
     height: 2.5rem;
+    border: 1px solid gray;
+    border-radius: 4px;
 
     position: relative;
     top: -2px;
+
+    cursor: pointer;
 }
+
+.search_arg > input[type="button"]:hover {background-color:inherit;}
 
 input[type="checkbox"] + label {
     font-size: 1.1rem;
     cursor: pointer;
     user-select: none;
 
-    padding: 2px;
+    padding: 4px;
     padding-left: 25px;
+    margin-right: -3px;
 }
 
 input[type="checkbox"] + label:hover {
@@ -60,18 +71,20 @@ input[type="checkbox"] {
 #search_box {
     font-size: 18px;
     width: 500px;
+    max-width: 95%;
     height: 2.5rem;
     margin-bottom: 8px;
 }
 
 .result {
+    background-color: white;
     border: 1px solid lightgray;
 
     padding: 5px;
     margin-top: 10px;
 }
 
-.result:hover {background-color: Gainsboro;}
+.result:hover {background-color: lightgray;}
 
 .tag_cont {margin: 15px 5px 10px 5px;}   /*Top, right, bottom, left*/
 
@@ -79,6 +92,7 @@ input[type="checkbox"] {
     border: 1px solid gray;
     border-radius: 10px;
     background-color: white;
+    display: inline-block;  /*When there is wraping, wrap whole block*/
 
     margin-right: 7px;
         /*Top, right, bottom, left*/
@@ -87,8 +101,6 @@ input[type="checkbox"] {
     user-select: none;
     
 }
-
-.tag:hover {background-color: lightgray;}
 
 /*images which class that start with "ban_"*/
 img.banner {

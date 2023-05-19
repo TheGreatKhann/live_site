@@ -19,6 +19,10 @@ async function get_pages() {
 // Display results
 function dis_results(matching) {
 
+    if (matching.length == 0) { // If no results where found
+        document.getElementById("results").innerHTML = "<h2>No results found...</h2>";
+        return;    // Exits the function
+    }
     // Loop through all results and turns them into HTML sections
     for (var i = 0; i < matching.length; i++) {
         var to_add = "";
@@ -40,6 +44,8 @@ function dis_results(matching) {
 
 // Loops thorugh pages and passes matching to dis_results
 function search(query) {
+    // To prevent double results
+    if (typeof display_delay !== 'undefined') {  clearTimeout(display_delay);  }
     // if no query was made, take it from the search box
     if (query == null) {query = document.getElementById("search_box").value;}
 
@@ -47,11 +53,17 @@ function search(query) {
     document.getElementById("results").innerHTML = "";
 
     const matching = [];
+
+    // #How to loop through the keys of an object
+    //const user = {name: 'John Doe', email: 'john.doe@example.com', age: 25, dob: '08/02/1989', active: true};
+    //for (var key in user) {  alert(user[key]);  }
+
     // Loop through all pages
     for (var i = 0; i < pages.length; i++) {
+        //if (i == 7) {  break;  }    // Limits number of results
         // Checks if input matches page
         if (( RegExp(query, "i").test(pages[i].tags) |        // In page tags?
-              RegExp(query, "i").test(pages[i].title) ) &     // In page title
+              RegExp(query, "i").test(pages[i].title) ) &     // In page title?
               document.getElementById(pages[i].type + "_check").checked) {  // Include based on checkboxes
             // Adds all matching pages to an array
             matching.push(pages[i])
@@ -59,7 +71,7 @@ function search(query) {
     }
     // Wait a bit before passing the results to the display function
     // The delay is there so the user knows something has been searched
-    setTimeout(() => {
+    display_delay = setTimeout(() => {
         dis_results(matching);
       }, 100);
 }
@@ -70,7 +82,7 @@ function search_enter() {
     var input = document.getElementById("search_box");
     // If the input was an enter key
     input.addEventListener("keypress", function _listener() {
-        if (event.key === "Enter") {  search(input.value);  } 
+        if (event.key === "Enter") {  search();  } 
         // Removes listener
         input.removeEventListener("keypress", _listener, true);
     }, true);

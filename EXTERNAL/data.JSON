@@ -45,4 +45,22 @@
     "type": "menu", 
     "desc": "In some parts of the world, horse meat is very popular. It can even be the basis for a soup!", 
     "tags":["Soup", "Meat"]
+},
+{
+    "title": "Sandwich", 
+    "type": "menu", 
+    "desc": "Wikipedia: A sandwich is a food typically consisting of vegetables, sliced cheese or meat, placed on or between slices of bread, or more generally any dish wherein bread serves as a container or wrapper for another food type.", 
+    "tags":["Bread"]
+},
+{
+    "title": "Hamburger", 
+    "type": "recipe", 
+    "desc": "Wikipedia: Burgers can also be made with patties made from ingredients other than beef.[40] For example, a turkey burger uses ground turkey meat, a chicken burger uses ground chicken meat.", 
+    "tags":["Bread", "Meat"]
+},
+{
+    "title": "Serving sizes: An increase", 
+    "type": "article",
+    "desc": "Healthline: Portion distortion is an effect in which you eat more if you are served more food — sometimes more than your body needs. The rise of portion distortion in the West stems from supersized convenience foods such as fast-food and restaurant meals and packaged foods.", 
+    "tags":["Health and Wellbeing", "Diet"]
 }]
