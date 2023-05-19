@@ -4,7 +4,7 @@
 // Request the JSON from the EXTERNAL folder
 var pages;              // Decleared outside -> global
 async function get_pages() {
-    const response = await fetch('https://hit226-d1-2023.bitbucket.io/EXTERNAL/data.JSON');
+    const response = await fetch('https://thegreatkhann.github.io/live_site/EXTERNAL/data.JSON');
     pages = await response.json();
     if (localStorage.getItem("search_query") == null) {
         search(document.getElementById("search_box").value); // When no external call, display local search box
