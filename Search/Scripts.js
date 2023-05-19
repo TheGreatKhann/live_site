@@ -4,7 +4,11 @@
 // Request the JSON from the EXTERNAL folder
 var pages;              // Decleared outside -> global
 async function get_pages() {
-    const response = await fetch('https://thegreatkhann.github.io/live_site/EXTERNAL/data.JSON');
+    //Chrome 'lightens' fonts making them very hard to read. Following darkens fonts only on Chrome
+    if(navigator.userAgent.match(/chrome|chromium|crios/i)) {   //Source: https://codepedia.info/detect-browser-in-javascript
+        document.getElementsByTagName("body")[0].style.fontWeight = 400;  }
+
+    const response = await fetch('https://hit226-d1-2023.bitbucket.io/EXTERNAL/data.JSON');
     pages = await response.json();
     if (localStorage.getItem("search_query") == null) {
         search(document.getElementById("search_box").value); // When no external call, display local search box

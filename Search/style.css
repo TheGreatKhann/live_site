@@ -2,11 +2,14 @@ body {
     margin-left: 5%;
     margin-right: 7%;
 
-    font-family: "Segoe UI Light","sans-serif";
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 300;
+
     background-color: Lavender;
 }
 
 
+h2 {font-weight: 500;}
 
 
 /*Remove styling caused by being a link*/
@@ -37,7 +40,7 @@ body {
 .search_arg > input[type="button"]:hover {background-color:inherit;}
 
 input[type="checkbox"] + label {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     cursor: pointer;
     user-select: none;
 
